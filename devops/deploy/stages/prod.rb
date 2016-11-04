@@ -1,0 +1,1 @@
+server '62.4.23.221', user: 'www-data', roles: %w{app}

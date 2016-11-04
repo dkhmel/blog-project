@@ -2,8 +2,7 @@
 lock '3.4.0'
 
 set :deploy_to, "/var/www/symfony_demo"
-#set :repo_url, 'git@github.com:dkhmel/my_project.git'
-set :repo_url, 'git@github.com:dkhmel/my_project.git'
+set :repo_url, 'git@github.com:dkhmel/blog-project.git'
 
 set :stages, %w(prod)
 
@@ -39,7 +38,7 @@ set :assets_install_flags,  '--symlink'
 
 # Share files/directories between releases
 set :linked_files, []
-set :linked_dirs, ["var/logs"]
+set :linked_dirs, ["var/logs", "vendor"]
 
 # Set correct permissions between releases, this is turned off by default
 set :file_permissions_paths, ["var"]

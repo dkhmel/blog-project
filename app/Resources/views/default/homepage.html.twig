@@ -6,8 +6,16 @@
     the homepage is a special page which displays neither a header nor a footer.
     this is done with the 'trick' of defining empty Twig blocks without any content
 #}
-{% block header %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block header %}
+    <div>
+        </br>
+    <img align="center" style="width:100px;height:100px;"
+         src="{{ asset('img/logo_theodo_triangle.png') }}" />
+    </div>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
 
 {% block body %}
     <div class="page-header">
@@ -42,15 +50,14 @@
         </div>
     </div>
 
-
-    </br>
-    </br>
-    </br>
-    </br>
-
-    <div>
-        <img style="width:228px;height:228px;"
-        src="{{ asset('img/logo_theodo_triangle.png') }}" />
+    <div class="image">
+        <h1>Happy at work 2016</h1>
+        <img style="width:485px;height:273px;"
+             src="{{ asset('img/haw.jpg') }}" />
+        <p align="center"><font size="4" color="#999999" face="monospace">source:
+                <a href="http://start.lesechos.fr/rejoindre-une-entreprise/classements-entreprises/classement-des-startups-les-mieux-notees-par-leurs-salaries-4870.php">http://start.lesechos.fr</a>
+                (PS: Ils ont dessiné Theodo en femme O_o)</font></p>
     </div>
+
 
 {% endblock %}
